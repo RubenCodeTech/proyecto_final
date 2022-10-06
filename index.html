@@ -10,41 +10,50 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>
-                cafedealtura.com
-                <img src="images/Vector.svg" alt="coffee logo">
-                <a href="pages/shop.html">Tienda</a>
-                <a href="pages/suscription.html">Suscripción</a>
-                <a href="pages/for_companies.html">Para empresas</a>
-                <a href="pages/about_us.html">Sobre nosotros</a>
-                <a href="pages/contact.html">Contacto</a>
-                <img src="images/Icon (2).svg" alt="telf">
-                <a href="tel:+34919490518">+34 919 49 05 18</a>
-                <input class="button" type="button" value="Iniciar sesión"/>
-  
-            </div>
-            <div></div>
-            <div></div>
-            <div><img src="images/Group.svg" alt=""></div>
+    <header class="grid_header_container">
+        <nav class="navbar">
+                <section class="navlogo">
+                     <h4>cafedealtura.com</h4>
+                    <img src="images/Vector.svg" alt="coffee logo">
+                </section>
+                <section class="navlinks">
+                    <a href="pages/shop.html">Tienda</a>
+                    <a href="pages/suscription.html">Suscripción</a>
+                    <a href="pages/for_companies.html">Para empresas</a>
+                    <a href="pages/about_us.html">Sobre nosotros</a>
+                    <a href="pages/contact.html">Contacto</a>
+                </section>
+                <section class="navtelf">
+                    <img src="images/Icon (2).svg" alt="telf">
+                    <a href="tel:+34919490518">+34 919 49 05 18</a>
+                    <input class="button" type="button" value="Iniciar sesión" />
+                </section>
+                <section class="navbaglogo">
+                    <div><img src="images/Group.svg" alt=""></div>
+                </section>
         </nav>
-
-        <section>
-            <article>
+            <article class="article">
                 <p>De la panta a tu taza</p>
                 <h1>El mejor café del mundo, ahora en tu casa.</h1>
                 <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas
                     viajar desde la comodidad de tu hogar</p>
-                <div>
-                    Descubrir origenes
-                </div>
+                <section class="articlebuttons">
+                   <div><input type="button" class="descubrirbutton" value="Descubrir origenes"> </div> 
+                    <div><input type="button" class="comprarbutton" value="Comprar café"></div> 
+                </section>
             </article>
-            <picture>
-
+            <picture class="img">
+                <img src="images/Hero image.png" alt="">
             </picture>
-        </section>
     </header>
+    <main>
+        <div>
+            <div> <img src="images/verde.svg" alt="Café Costa Rica"> </div>
+            <div><img src="images/roja.svg" alt="Café Colombia"> </div>
+            <div><img src="images/amarilla.svg" alt="Café Laos"> </div>
+            <div><img src="images/morada.svg" alt="Café Etiopía"> </div>
+        </div>
+    </main>
 </body>
 
 </html>

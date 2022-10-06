@@ -1,25 +1,114 @@
-body {
-    width: 1280px;
+.grid_header_container{
+    display: grid;
+    grid-template-areas:
+    "navbar navbar"
+    "article img";
+    background-color: #FEFFF5;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 1280px;
-    height: 64px;
-    padding: 12px 40px 12px 40px;
-
-}
-
-header>nav>div:first-child {
-    background-color: #2B2A2B;
-}
-
-header>nav>div:first-child,
-header>nav>div:first-child>a {
+header>nav>section:first-child, header>nav>section>a {
     color: white;
 }
-
+.navbar{
+    height: 64px;
+    grid-area: navbar;
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr 1fr;
+    background-color: #2B2A2B;
+    color: white;
+    align-content: center;
+}
+.navlogo{
+    display: flex;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 1054;
+    gap: 1rem;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+   color: white;
+}
+.navtelf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  
+}
+.navbaglogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.img{
+    grid-area: img;
+    margin: 3rem 3rem 3rem 3rem;
+    width: 588px;
+    height: 390px;
+    border-radius: 20px;
+}
+.article{
+    grid-area: article;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-left: 3rem;
+}
+.article>p:first-child{
+    color: #2A5B45;
+    width: 588px;
+    height: 24px;
+    font-weight: 600px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.article>h1{
+    width: 588px;
+    font-size: 40px;
+    line-height: 44px;
+    align-self: stretch;
+}
+.article>p:nth-child(3){
+    width: 588px;
+    height: 32px;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.articlebuttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.descubrirbutton{
+    width: 168px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 12px 24px 12px 24px;
+    gap: 8px;
+    background-color: #1F1815;
+    color: white;
+}
+.comprarbutton{
+width: 137px;
+height: 40px;
+left: 184px;
+border-radius: 4px;
+padding: 12px 24px 12px 24px;
+gap: 8px;
+background-color: #2A5B45;
+color: white;
+}
+input[type=button]{
+    border-style: none;
+}
 .button {
     width: 130px;
     height: 40px;
@@ -29,3 +118,4 @@ header>nav>div:first-child>a {
     color: white;
     border: none;
 }
+
