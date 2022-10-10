@@ -10,6 +10,7 @@
 header>nav>section:first-child, header>nav>section>a {
     color: white;
 }
+/* with 1080 resolution, links on nav isnt with the correct size/gap/ */
 .navbar{
     height: 64px;
     grid-area: navbar;
@@ -73,7 +74,6 @@ text-decoration: none;
     justify-content: space-between;
  
 }
-
 .article{
     grid-area: articletext;
     /* display: flex;
@@ -112,6 +112,7 @@ text-decoration: none;
     grid-area: imgtree;
     margin-bottom: 4rem;
 }
+/* There is something brong with the img, check it and make it well */
 .heroimg{
     margin: 2rem 3rem 3rem 3rem;
     /* width: 588px;
@@ -195,4 +196,9 @@ main>:last-child{
 }
 .linkviewall>b>u>a{
     color: black;
+}
+.articleandform{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
