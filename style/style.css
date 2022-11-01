@@ -1,17 +1,21 @@
-*{
+* {
     font-family: 'Outfit';
 }
-.grid_header_container{
+
+.grid_header_container {
     display: grid;
     grid-template-areas:
-    "navbar navbar";
+        "navbar navbar";
     background-color: #FEFFF5;
 }
-header>nav>section:first-child, header>nav>section>a {
+
+header>nav>section:first-child,
+header>nav>section>a {
     color: white;
 }
+
 /* with 1080 resolution, links on nav isnt with the correct size/gap/ */
-.navbar{
+.navbar {
     height: 64px;
     grid-area: navbar;
     display: grid;
@@ -20,7 +24,8 @@ header>nav>section:first-child, header>nav>section>a {
     color: white;
     align-content: center;
 }
-.navlogo{
+
+.navlogo {
     display: flex;
     padding-left: 40px;
     padding-top: 12px;
@@ -28,53 +33,63 @@ header>nav>section:first-child, header>nav>section>a {
     padding-right: 1054;
     gap: 0.6rem;
 }
-.navlogo>h4{
+
+.navlogo>h4 {
     font-size: 23.46px;
     line-height: 35.19px;
 }
-.navlinks{
+
+.navlinks {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
     color: white;
 }
-.navlinks>a{
+
+.navlinks>a {
     padding: 5px;
 }
-header>nav>section:nth-child(2)>a:hover{
-background-color: #3F3E3F;
-border-radius: 4px;
+
+header>nav>section:nth-child(2)>a:hover {
+    background-color: #3F3E3F;
+    border-radius: 4px;
 }
-.navlinks>a{
-text-decoration: none;
+
+.navlinks>a {
+    text-decoration: none;
 }
-.navtelf{
+
+.navtelf {
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
-.navtelf>a{
+
+.navtelf>a {
     text-decoration: none;
 }
-.navbaglogo{
+
+.navbaglogo {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
-.thebestcoffee{
+
+.thebestcoffee {
     display: grid;
     grid-template-areas:
-    "articletext imgtree";
+        "articletext imgtree";
     /* grid-template-columns: 1fr 1fr;
     grid-template-rows: 30rem; */
     justify-content: space-between;
- 
+
 }
-.article{
+
+.article {
     grid-area: articletext;
     /* display: flex;
     justify-content: flex-start;
@@ -82,7 +97,8 @@ text-decoration: none;
     padding-top: 7rem;
     padding-left: 3rem;
 }
-.article>p:first-child{
+
+.article>p:first-child {
     color: #2A5B45;
     width: 588px;
     height: 24px;
@@ -90,37 +106,43 @@ text-decoration: none;
     font-size: 18px;
     line-height: 24px;
 }
-.article>h1{
+
+.article>h1 {
     width: 588px;
     font-size: 40px;
     line-height: 44px;
     align-self: stretch;
 }
-.article>p:nth-child(3){
+
+.article>p:nth-child(3) {
     width: 588px;
     height: 32px;
     font-weight: 400px;
     font-size: 14px;
     line-height: 16px;
 }
-.articlebuttons{
+
+.articlebuttons {
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
 }
-.img{
+
+.img {
     grid-area: imgtree;
     margin-bottom: 4rem;
 }
+
 /* There is something brong with the img, check it and make it well */
-.heroimg{
+.heroimg {
     margin: 2rem 3rem 3rem 3rem;
     /* width: 588px;
     height: 390px; */
     height: 110%;
     border-radius: 20px;
 }
-.descubrirbutton{
+
+.descubrirbutton {
     width: 168px;
     height: 40px;
     border-radius: 4px;
@@ -129,7 +151,8 @@ text-decoration: none;
     background-color: #1F1815;
     color: white;
 }
-.comprarbutton{
+
+.comprarbutton {
     width: 137px;
     height: 40px;
     left: 184px;
@@ -139,9 +162,11 @@ text-decoration: none;
     color: white;
     background-color: #2A5B45;
 }
-input[type=button]{
+
+input[type=button] {
     border-style: none;
 }
+
 .button {
     width: 130px;
     height: 40px;
@@ -150,13 +175,91 @@ input[type=button]{
     background-color: #515051;
     color: white;
     border: none;
+} 
+                                    /* END section */
+                                    /* START section */
+
+#coffeemilkbackground{
+    text-align: center;
+    height: 380px;
+    background-image: url(/images/cafeconleche.png);
+    background-position: center;
+    background-size: cover;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  */
 }
-.coffeebags{
+#coffeemilkbackground>h1{
+    position: relative;
+    top: 40px;
+    font-size: 24px;
+    color: white;
+}
+#coffeemilkthreecards{
+    /* background-color: gold; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 24px;
+    height: 232px;
+    /* text-align: center; */
+}
+
+#coffeemilkthreecards>:nth-child(1)>p{
+    width: 268px;
+    height: 64px;
+    font-size: 14px;
+    text-align: center;
+}
+#coffeemilkthreecards>:nth-child(2)>p{
+    width: 268px;
+    height: 32px;
+    font-size: 14px;
+    text-align: center;
+}
+#coffeemilkthreecards>:nth-child(3)>p{
+    width: 268px;
+    height: 48px;
+    font-size: 14px;
+    text-align: center;
+}
+.coffeemilkeachcards{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #F7F5F3;
+    margin-top: 100px;
+    width: 316px;
+    height: 232px;
+    border-radius: 8px;
+}
+.coffeemilkeachcards>h2{
+    width: 268px;
+    font-size: 18px;
+}
+/* .coffeemilkeachcards>p{
+    width: 268px;
+    height: 64px;
+    font-size: 14px;
+    text-align: center;
+} */
+                                    /* END section */
+                                    /* STARD section */
+.coffeebags {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
-.coffeegreen, .coffeered, .coffeeyellow, .coffeepurple{
+
+.coffeegreen,
+.coffeered,
+.coffeeyellow,
+.coffeepurple {
     display: flex;
     width: 282px;
     height: 391.39px;
@@ -169,7 +272,8 @@ input[type=button]{
     border-radius: 8px;
     border-color: #e2e2e2;
 }
-.addbutton{
+
+.addbutton {
     width: 60px;
     height: 32px;
     top: 335px;
@@ -180,25 +284,89 @@ input[type=button]{
     background-color: #2A5B45;
     color: white;
 }
-main>h2{
+
+main>h2 {
     display: flex;
     justify-content: center;
     color: #2A5B45;
-    margin-top:40px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
-main>:last-child{
+
+main>:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    padding:0% ;
+    padding: 0%;
 }
-.linkviewall>b>u>a{
+
+.linkviewall>b>u>a {
     color: black;
 }
-.articleandform{
-    display: flex;
-    flex-direction: column;
+
+.leftform {
+    background-color: #e3ded7;
+    font-size: 14px;
+    line-height: 32px;
+    width: 652px;
+    height: 552px;
+    padding-top: 116px;
+    padding-bottom: 116;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    /* display:flex;
     align-content: center;
+    justify-content: center; */
 }
+
+/* .leftformheader{
+    background-color: blueviolet;
+    font-size: 14px;
+    line-height: 16px;
+    width: 588px;
+    padding-right: 24px;
+}
+.leftformheader>p{
+    line-height: 16px;
+}
+.leftformcontent{
+    background-color: #54c994; */
+/* margin-top: 32px; 
+}*/
+.rightform {
+    height: 552x;
+    width: 588px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formName{
+
+}
+.formEmail{
+
+}
+.formTelf{
+
+}
+.formOpinion{
+
+}
+.checkBox{
+
+}
+.rightformrightbar {
+    background-color: #e3ded7;
+    padding-top: 116px;
+    padding-bottom: 116;
+    height: 552px;
+    width: 40px;
+}
+#username{
+    width: 470px;
+}
+
+

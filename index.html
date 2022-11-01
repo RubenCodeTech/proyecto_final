@@ -12,7 +12,7 @@
 
 <body>
     <!-- Ruben -->
-        <!-- Promo full time -->
+    <!-- Promo full time -->
     <header class="grid_header_container">
         <nav class="navbar">
             <section class="navlogo">
@@ -54,50 +54,117 @@
             </picture>
         </section>
 
-        <h2>Novedades</h2>
-        <div class="coffeebags">
-            <div class="coffeegreen"> <img src="images/verde.svg" alt="Café Costa Rica">
-                <div>Costa Rica Tarrazú</div>
-                <div>9,00€</div>
-                <input type="button" class="addbutton" value="Añadir">
+
+         <section id="coffeemilkbackground"> <!-- cafeconleche -->
+            
+            <h1>Café con las mejores condiciones</h1>
+            <div id="coffeemilkthreecards">
+
+                    <div class="coffeemilkeachcards">
+                        <img src="images/iconoverif.svg" alt="">
+                        <h2> Recibe tu pedido sin preocuparte</h2>
+                        <p>Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás sin tu taza de la mañana.</p>
+                    </div>
+                    <div class="coffeemilkeachcards">
+                        <img src="images/iconocamion.svg" alt="">
+                        <h2>Envío en 24/48h</h2>
+                        <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
+                    </div>
+                    <div class="coffeemilkeachcards">
+                        <img src="images/iconoregalo.png" alt="">
+                        <h2>Descuentos y beneficios</h2>
+                        <p>Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a nosotros.</p>
+                    </div>
             </div>
-            <div class="coffeered"><img src="images/roja.svg" alt="Café           Colombia">
-                <div>Colombia Los Naranjos</div>
-                <div>9,00€</div>
-                <input type="button" class="addbutton" value="Añadir">
+            
+        </section>
+
+        <section>
+            <h2>Novedades</h2>
+            <div class="coffeebags">
+                <div class="coffeegreen"> <img src="images/verde.svg" alt="Café Costa Rica">
+                    <div>Costa Rica Tarrazú</div>
+                    <div>9,00€</div>
+                    <input type="button" class="addbutton" value="Añadir">
+                </div>
+                <div class="coffeered"><img src="images/roja.svg" alt="Café           Colombia">
+                    <div>Colombia Los Naranjos</div>
+                    <div>9,00€</div>
+                    <input type="button" class="addbutton" value="Añadir">
+                </div>
+                <div class="coffeeyellow"><img src="images/amarilla.svg" alt="Café Laos">
+                    <div>Laos Amanecer</div>
+                    <div>9,00€</div>
+                    <input type="button" class="addbutton" value="Añadir">
+                </div>
+                <div class="coffeepurple"><img src="images/morada.svg" alt="Café Etiopía">
+                    <div>Etiopia Yrgacheff</div>
+                    <div>9,00€</div>
+                    <input type="button" class="addbutton" value="Añadir">
+                </div>
             </div>
-            <div class="coffeeyellow"><img src="images/amarilla.svg" alt="Café Laos">
-                <div>Laos Amanecer</div>
-                <div>9,00€</div>
-                <input type="button" class="addbutton" value="Añadir">
+            <div class="linkviewall">
+                <b><u>
+                        <a href="pages/shop.html">Ver todos</a>
+                    </u></b>
+                <img src="images/arrow.svg" alt="arrow">
             </div>
-            <div class="coffeepurple"><img src="images/morada.svg" alt="Café Etiopía">
-                <div>Etiopia Yrgacheff</div>
-                <div>9,00€</div>
-                <input type="button" class="addbutton" value="Añadir">
-            </div>
-        </div>
-        <div class="linkviewall">
-            <b><u>
-                    <a href="pages/shop.html">Ver todos</a>
-                </u></b>
-            <img src="images/arrow.svg" alt="arrow">
-        </div>
+        </section>
+
         <div class="articleandform">
             <section class="leftform">
-                Entra en contacto con nosotros
-          Si tienes dudas, ponte en contacto con nosotros através del formulario y te responderemos lo antes posible.
-          También puedes ponerte en contacto con nosotros en nuestra dirección o através del teléfono de la tienda. 
-          742 Evergreen Terrace
-          Spingfield, OR 12345
-          +1(555) 123-4567
-          support@example.com
-          ¿Buscas trabajo? Ver nuestras ofertas.
+                <div class="leftformheader">
+                    <h1>Entra en contacto con nosotros</h1>
+                    <p>Si tienes dudas, ponte en contacto con nosotros através del formulario y te responderemos lo
+                        antes
+                        posible. </p>
+                </div>
+                <div class="leftformcontent">
+                    <p>También puedes ponerte en contacto con nosotros en nuestra dirección o através del teléfono de la
+                        tienda.</p>
+
+                    <p>742 Evergreen Terrace
+                        Spingfield, OR 12345</p>
+                    <p>+1(555) 123-4567</p>
+                    <p>support@example.com</p>
+                    <p>¿Buscas trabajo? Ver nuestras ofertas.</p>
+                </div>
             </section>
-            <form action="">
-                <label for="Nombre completo" name="fullname" id="fullname"></label>
-                <input type="text" name="fullname" id="fullname">
-            </form>
+            <section class="rightform">
+                <form action="">
+                    <div class="formName">
+                        <label for="username">Nombre completo</label><br>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="formEmail">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="formTelf">
+                        <label for="tlf">Teléfono</label><br>
+                        <select name="pais" id="pais">
+                            <option value="US">US</option>
+                            <option value="ESP">ESP</option>
+                        </select>
+
+                        <input type="number" id="tlf" name="tlf" min="0" minlength="9" maxlength="9" list="pais"
+                            required>
+                    </div>
+                    <div class="formOpinion">
+
+                        <textarea name="opinion" id="opinion" cols="30"
+                            rows="10">       ¿En qué podemos ayudarte?</textarea>
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox" name="aceptpriv" id="aceptpriv">
+                        <p>
+                            Acepto la <a href="">Política de privacidad</a> y los <a href="">Términos y condiciones</a>
+                        </p>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            <div class="rightformrightbar"></div>
         </div>
     </main>
 </body>
