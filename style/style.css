@@ -1,6 +1,10 @@
 * {
     font-family: 'Outfit';
 }
+body{
+    margin:0px;
+    
+}
 
 .grid_header_container {
     display: grid;
@@ -129,16 +133,13 @@ header>nav>section:nth-child(2)>a:hover {
 }
 
 .img {
-    grid-area: imgtree;
+    grid-area: imgtree; 
     margin-bottom: 4rem;
 }
 
 /* There is something brong with the img, check it and make it well */
 .heroimg {
-    margin: 2rem 3rem 3rem 3rem;
-    /* width: 588px;
-    height: 390px; */
-    height: 110%;
+    width: 588px;
     border-radius: 20px;
 }
 
@@ -175,11 +176,12 @@ input[type=button] {
     background-color: #515051;
     color: white;
     border: none;
-} 
-                                    /* END section */
-                                    /* START section */
+}
 
-#coffeemilkbackground{
+/* END section */
+/* START section */
+
+#coffeemilkbackground {
     text-align: center;
     height: 380px;
     background-image: url(/images/cafeconleche.png);
@@ -190,13 +192,16 @@ input[type=button] {
     align-items: center;
     align-content: center;  */
 }
-#coffeemilkbackground>h1{
+
+#coffeemilkbackground>h1 {
     position: relative;
     top: 40px;
     font-size: 24px;
+    font-weight: 500;
     color: white;
 }
-#coffeemilkthreecards{
+
+#coffeemilkthreecards {
     /* background-color: gold; */
     display: flex;
     align-items: center;
@@ -208,25 +213,28 @@ input[type=button] {
     /* text-align: center; */
 }
 
-#coffeemilkthreecards>:nth-child(1)>p{
+#coffeemilkthreecards>:nth-child(1)>p {
     width: 268px;
     height: 64px;
     font-size: 14px;
     text-align: center;
 }
-#coffeemilkthreecards>:nth-child(2)>p{
+
+#coffeemilkthreecards>:nth-child(2)>p {
     width: 268px;
     height: 32px;
     font-size: 14px;
     text-align: center;
 }
-#coffeemilkthreecards>:nth-child(3)>p{
+
+#coffeemilkthreecards>:nth-child(3)>p {
     width: 268px;
     height: 48px;
     font-size: 14px;
     text-align: center;
 }
-.coffeemilkeachcards{
+
+.coffeemilkeachcards {
     background-color: white;
     display: flex;
     align-items: center;
@@ -238,18 +246,20 @@ input[type=button] {
     height: 232px;
     border-radius: 8px;
 }
-.coffeemilkeachcards>h2{
+
+.coffeemilkeachcards>h2 {
     width: 268px;
     font-size: 18px;
 }
+
 /* .coffeemilkeachcards>p{
     width: 268px;
     height: 64px;
     font-size: 14px;
     text-align: center;
 } */
-                                    /* END section */
-                                    /* STARD section */
+/* END section */
+/* STARD section */
 .coffeebags {
     display: flex;
     justify-content: center;
@@ -304,6 +314,47 @@ main>:last-child {
 .linkviewall>b>u>a {
     color: black;
 }
+/* ===============start coffee shop=============== */
+#coffeeShop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 24px;
+}
+#textCoffeeShop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    width: 50%;
+    min-width: 588px;
+}
+#textCoffeeShop>h1{
+    color: #2A5B45;
+    font-size: 24px;
+    margin: 0;
+}
+#textCoffeeShop>p{
+    font-size: 14px;
+    margin: 0;
+}
+#imgTextCoffeeShop{
+    height: 390px;
+    width: 100%;
+    border-radius: 20px;
+}
+#cajitaimg{
+    width: 50%;
+    min-width: 588px;
+}
+
+/* ===============end coffee shop=============== */
+/* ===============start form=============== */
 
 .leftform {
     background-color: #e3ded7;
@@ -343,21 +394,16 @@ main>:last-child {
     justify-content: space-between;
 }
 
-.formName{
+.formName {}
 
-}
-.formEmail{
+.formEmail {}
 
-}
-.formTelf{
+.formTelf {}
 
-}
-.formOpinion{
+.formOpinion {}
 
-}
-.checkBox{
+.checkBox {}
 
-}
 .rightformrightbar {
     background-color: #e3ded7;
     padding-top: 116px;
@@ -365,8 +411,8 @@ main>:last-child {
     height: 552px;
     width: 40px;
 }
-#username{
+
+#username {
     width: 470px;
 }
-
-
+/* ===============end form=============== */
