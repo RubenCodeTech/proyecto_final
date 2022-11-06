@@ -315,6 +315,90 @@ main>:last-child {
 .linkviewall>b>u>a {
     color: black;
 }
+/* ===============start  FAQ=============== */
+.faq{
+    background-color: #2A5B45;
+    height: 621px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.faq_tittle{
+    color: white;
+    /* height: 28px; */
+    font-size: 24px;
+    /* font-weight: 600px; */
+}
+.faq_tittle_arrow{
+    display: flex;
+    justify-content: flex-start;
+}
+.faq_tittle_sections{
+    width: 100%;
+}
+.faq_arrow_sections{
+    width: 100%;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.faq_tittle_arrow{
+    
+    display: flex;
+    align-content: flex-end;
+    width: 100%;
+}
+.faq_firstsection{
+    background-color: white;
+    width: 668px;
+    border-radius: 10px;
+    padding-left: 24px;
+    /* padding: 24px; */
+}
+.faq_firstsection>hr,.faq_secondsection>hr{
+    margin: 0px;
+    height: 1px;
+    width: 620px;
+    background-color: #E3DED7;
+    border: none;
+    
+}
+.faq_secondsection{
+    background-color: white;
+    width: 668px;
+    border-radius: 10px;
+    padding-left: 24px;
+}
+.faq_text{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    width: 620px;
+}
+.faq_thirdsection{
+    background-color: white;
+    width: 668px;
+    border-radius: 10px;
+    padding-left: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    font-weight: 600px;
+}
+.link_ur_questions>u>a{
+    color:white;
+    font-size: 14px;
+}
+.link_ur_questions>a{
+    color: white;
+    text-decoration: underline;
+}
+/* ===============end FAQ=============== */
 /* ===============start coffee shop=============== */
 #coffeeShop{
     display: flex;
@@ -356,9 +440,12 @@ main>:last-child {
 
 /* ===============end coffee shop=============== */
 /* ===============start form=============== */
-
+.articleandform{
+    display: flex;
+    flex-direction: row;
+    background-color: #E3DED7;
+}
 .leftform {
-    background-color: #e3ded7;
     font-size: 14px;
     line-height: 32px;
     width: 652px;
@@ -367,44 +454,62 @@ main>:last-child {
     padding-bottom: 116;
     padding-left: 40px;
     padding-right: 40px;
-
-    /* display:flex;
-    align-content: center;
-    justify-content: center; */
 }
-
-/* .leftformheader{
-    background-color: blueviolet;
-    font-size: 14px;
-    line-height: 16px;
-    width: 588px;
-    padding-right: 24px;
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
-.leftformheader>p{
-    line-height: 16px;
-}
-.leftformcontent{
-    background-color: #54c994; */
-/* margin-top: 32px; 
-}*/
-.rightform {
+.right_section_form{
+    background-color: white;
+    display: flex;
+    align-items: center;
     height: 552x;
     width: 588px;
     margin-left: 40px;
-    display: flex;
-    justify-content: space-between;
+    margin-right: 40px;
+    padding-left: 67px;
+    padding-right: 51px;
+    
+}
+.formName{
+
+}
+#username, #email, #tlf{
+    width: 470px;
+    height: 34px;
+    border-radius: 6px;
+}
+#opinion{
+    width: 470px;
+    height: 122px;
+    border-radius: 6px;
+}
+.formEmail{
+
 }
 
-.formName {}
+.formTelf{
 
-.formEmail {}
+}
+.tlf_options_input{
+    display: flex;
+}
+#pais{
+    position: absolute;
+    background-color: transparent;
+    width: 68px;
+    height: 38px;
+    display: flex;
+    border-style: none;
+}
+.formOpinion{
 
-.formTelf {}
-
-.formOpinion {}
-
-.checkBox {}
-
+}
+.checkBox{
+display: flex;
+flex-direction: row;
+}
 .rightformrightbar {
     background-color: #e3ded7;
     padding-top: 116px;
@@ -449,6 +554,20 @@ main>:last-child {
     justify-content:start;
     flex-direction: column;
 
+}
+.telefono{
+    background-color: #515051;
+    width: 182px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.telefono>a{
+    color: white;
+    font-size: 14px;
 }
 /* .leftmenuwithouttittle:nth-child(3)>a{
     color: white;
