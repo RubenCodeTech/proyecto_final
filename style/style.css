@@ -1,10 +1,13 @@
 * {
     font-family: 'Outfit';
     text-decoration: none;
+    /* margin: 0px;
+    padding: 0px; */
 }
-body{
+
+body {
     /* margin:0px; */
-    
+
 }
 
 .grid_header_container {
@@ -129,11 +132,10 @@ header>nav>section:nth-child(2)>a:hover {
 }
 
 .img {
-    grid-area: imgtree; 
+    grid-area: imgtree;
     margin-bottom: 4rem;
 }
 
-/* There is something brong with the img, check it and make it well */
 .heroimg {
     margin-top: 48px;
     margin-right: 40px;
@@ -308,71 +310,82 @@ main>:last-child {
     gap: 16px;
     padding: 0%;
 }
-.linkviewall{
+
+.linkviewall {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
+
 .linkviewall>b>u>a {
     color: black;
 }
+
 /* ===============start  FAQ=============== */
-.faq{
+.faq {
     background-color: #2A5B45;
-    height: 621px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
 }
-.faq_tittle{
+
+.faq_tittle>h2 {
     color: white;
-    /* height: 28px; */
     font-size: 24px;
-    /* font-weight: 600px; */
 }
-.faq_tittle_arrow{
+
+.faq_tittle_arrow {
     display: flex;
     justify-content: flex-start;
 }
-.faq_tittle_sections{
+
+.faq_tittle_sections {
     width: 100%;
 }
-.faq_arrow_sections{
+
+.faq_arrow_sections {
     width: 100%;
     margin-right: 24px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.faq_tittle_arrow{
-    
+
+.faq_tittle_arrow {
+
     display: flex;
     align-content: flex-end;
     width: 100%;
 }
-.faq_firstsection{
+
+.faq_firstsection {
     background-color: white;
     width: 668px;
     border-radius: 10px;
     padding-left: 24px;
     /* padding: 24px; */
 }
-.faq_firstsection>hr,.faq_secondsection>hr{
+
+.faq_firstsection>hr,
+.faq_secondsection>hr,
+.faq_thirdsection>hr {
     margin: 0px;
     height: 1px;
     width: 620px;
     background-color: #E3DED7;
     border: none;
-    
+
 }
-.faq_secondsection{
+
+.faq_secondsection {
     background-color: white;
     width: 668px;
     border-radius: 10px;
     padding-left: 24px;
 }
-.faq_text{
+
+.faq_text {
     font-size: 12px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -381,7 +394,8 @@ main>:last-child {
     padding-bottom: 24px;
     width: 620px;
 }
-.faq_thirdsection{
+
+.faq_thirdsection {
     background-color: white;
     width: 668px;
     border-radius: 10px;
@@ -390,27 +404,31 @@ main>:last-child {
     padding-bottom: 24px; */
     font-weight: 600px;
 }
-.link_ur_questions>u>a{
-    color:white;
+
+.link_ur_questions {
+    margin-bottom: 52px;
+}
+
+.link_ur_questions>a {
+    text-decoration: underline;
+    color: white;
     font-size: 14px;
 }
-.link_ur_questions>a{
-    color: white;
-    text-decoration: underline;
-}
+
 /* ===============end FAQ=============== */
 /* ===============start coffee shop=============== */
-#coffeeShop{
+#coffeeShop {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 480px;
     padding-left: 40px;
     padding-right: 40px;
     gap: 24px;
 }
-#textCoffeeShop{
+
+#textCoffeeShop {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -419,32 +437,37 @@ main>:last-child {
     width: 50%;
     min-width: 588px;
 }
-#textCoffeeShop>h1{
+
+#textCoffeeShop>h1 {
     color: #2A5B45;
     font-size: 24px;
     margin: 0;
 }
-#textCoffeeShop>p{
+
+#textCoffeeShop>p {
     font-size: 14px;
     margin: 0;
 }
-#imgTextCoffeeShop{
+
+#imgTextCoffeeShop {
     height: 390px;
     width: 100%;
     border-radius: 20px;
 }
-#cajitaimg{
+
+#cajitaimg {
     width: 50%;
     min-width: 588px;
 }
 
 /* ===============end coffee shop=============== */
 /* ===============start form=============== */
-.articleandform{
+.articleandform {
     display: flex;
     flex-direction: row;
     background-color: #E3DED7;
 }
+
 .leftform {
     font-size: 14px;
     line-height: 32px;
@@ -455,12 +478,14 @@ main>:last-child {
     padding-left: 40px;
     padding-right: 40px;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.right_section_form{
+
+.right_section_form {
     background-color: white;
     display: flex;
     align-items: center;
@@ -470,46 +495,56 @@ form{
     margin-right: 40px;
     padding-left: 67px;
     padding-right: 51px;
-    
-}
-.formName{
 
 }
-#username, #email, #tlf{
+
+.formName {}
+
+#username,
+#email {
     width: 470px;
     height: 34px;
     border-radius: 6px;
 }
-#opinion{
+
+#tlf {
+    width: 420px;
+    height: 34px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left-style: none;
+}
+
+#opinion {
     width: 470px;
     height: 122px;
     border-radius: 6px;
 }
-.formEmail{
 
-}
+.formEmail {}
 
-.formTelf{
+.formTelf {}
 
-}
-.tlf_options_input{
+.tlf_options_input {
     display: flex;
 }
-#pais{
-    position: absolute;
-    background-color: transparent;
-    width: 68px;
-    height: 38px;
-    display: flex;
-    border-style: none;
-}
-.formOpinion{
+
+#pais {
+    border-width: 2px;
+    border-color: black;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right-style: none;
 
 }
-.checkBox{
-display: flex;
-flex-direction: row;
+
+.formOpinion {}
+
+.checkBox {
+    display: flex;
+    flex-direction: row;
 }
+
 .rightformrightbar {
     background-color: #e3ded7;
     padding-top: 116px;
@@ -521,11 +556,11 @@ flex-direction: row;
 #username {
     width: 470px;
 }
+
 /* ===============end form=============== */
 /* ===============start footer=============== */
-.footerindex{
+.footerindex {
     margin-top: 26.21;
-    margin-left: 40px;
     font-size: 23.46px;
     height: 318px;
     color: white;
@@ -534,7 +569,8 @@ flex-direction: row;
     flex-direction: row;
     background-color: #1F1815;
 }
-.leftmenu{
+
+.leftmenu {
     margin-left: 40px;
     width: 100%;
     height: 100%;
@@ -543,7 +579,8 @@ flex-direction: row;
     flex-direction: column;
     align-items: flex-start;
 }
-.leftmenuwithouttittle{
+
+.leftmenuwithouttittle {
     margin-top: 0px;
     font-size: 18px;
     width: 100%;
@@ -551,11 +588,12 @@ flex-direction: row;
     gap: 16px;
     display: flex;
     align-items: flex-start;
-    justify-content:start;
+    justify-content: start;
     flex-direction: column;
 
 }
-.telefono{
+
+.telefono {
     background-color: #515051;
     width: 182px;
     height: 48px;
@@ -565,15 +603,17 @@ flex-direction: row;
     align-items: center;
     gap: 8px;
 }
-.telefono>a{
+
+.telefono>a {
     color: white;
     font-size: 14px;
 }
+
 /* .leftmenuwithouttittle:nth-child(3)>a{
     color: white;
     background-color: #2A5B45;
 } */
-.midleftsection{
+.midleftsection {
     font-size: 14px;
     width: 100%;
     display: flex;
@@ -581,22 +621,62 @@ flex-direction: row;
     flex-direction: row;
     gap: 128px;
 }
-.centralmenu{
+
+.centralmenu {
     gap: 16px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-.centralmenu>a{
+
+.centralmenu>a {
     color: white;
 }
-.rightmenu{
+
+.rightmenu {
     gap: 16px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.rightmenu>a{
+
+.rightmenu>a {
     color: white;
 }
+
 /* ===============end footer=============== */
+/* ==============================PAGE SHOPPING CART============================== */
+#cartShopSection{
+    background-color: violet;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: center;
+
+    width: 100%;
+}
+
+#cartShopBasketSection{
+width: 792px;
+
+}
+
+#cartShopPrizesSectionAside{
+    width: 384px;
+    height: 280px;
+    background-color: #F7F5F3;
+}
+
+.divisionLane {
+    height: 1px;
+    width: 95%;
+    background-color: #E3DED7;
+}
+#productsShopCart{
+    display: flex;
+    align-items: center;
+
+}
+
+#imgProductsShopCart>img{
+    width: 20%;
+}

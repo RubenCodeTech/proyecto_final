@@ -32,7 +32,7 @@
                 <input class="button" type="button" value="Iniciar sesión" />
             </section>
             <section class="navbaglogo">
-                <div><img src="images/Group.svg" alt=""></div>
+                <div><a href="pages/shoppingcart.html"><img src="images/Group.svg" alt=""></a></div>
             </section>
         </nav>
     </header>
@@ -87,25 +87,28 @@
         <section>
             <!--start saquitos -->
             <h2>Novedades</h2>
+            <div id="cestaCompra">hgtfhdfdh</div>
             <div class="coffeebags">
-                <div class="coffeegreen"> <img src="images/verde.svg" alt="Café Costa Rica">
-                    <div>Costa Rica Tarrazú</div>
-                    <div>9,00€</div>
+                <div></div>
+                <div class="coffeegreen"> 
+                    <img src="images/verde.svg" alt="Café Costa Rica">
+                    <div class="coffeNames">Costa Rica Tarrazú</div>
+                    <div class="prizeCoffee">9,00€</div>
                     <input type="button" class="addbutton" value="Añadir">
                 </div>
                 <div class="coffeered"><img src="images/roja.svg" alt="Café           Colombia">
-                    <div>Colombia Los Naranjos</div>
-                    <div>9,00€</div>
+                    <div class="coffeNames">Colombia Los Naranjos</div>
+                    <div class="prizeCoffee">9,00€</div>
                     <input type="button" class="addbutton" value="Añadir">
                 </div>
                 <div class="coffeeyellow"><img src="images/amarilla.svg" alt="Café Laos">
-                    <div>Laos Amanecer</div>
-                    <div>9,00€</div>
+                    <div class="coffeNames">Laos Amanecer</div>
+                    <div class="prizeCoffee">9,00€</div>
                     <input type="button" class="addbutton" value="Añadir">
                 </div>
                 <div class="coffeepurple"><img src="images/morada.svg" alt="Café Etiopía">
-                    <div>Etiopia Yrgacheff</div>
-                    <div>9,00€</div>
+                    <div class="coffeNames">Etiopia Yrgacheff</div>
+                    <div class="prizeCoffee">9,00€</div>
                     <input type="button" class="addbutton" value="Añadir">
                 </div>
             </div>
@@ -120,7 +123,7 @@
         <section class="faq">
             <!--start faq -->
             <div class="faq_tittle">
-                <h3>Preguntas frecuentes</h3>
+                <h2>Preguntas frecuentes</h2>
             </div>
             <div class="faq_firstsection">
                 <div class="faq_tittle_arrow">
@@ -128,11 +131,12 @@
                         <h3>¿Cómo hago el pedido?</h3>
                     </div>
                     <div class="faq_arrow_sections">
-                        <img src="images/flechafaq.svg" alt="">
+                        <img id="arrow" src="images/flechafaq.svg" alt="">
                     </div>
                 </div>
                 <hr>
-                <p class="faq_text">Selecciona el café que desees probar y completa el proceso de compra. Si lo
+                <p class="faq_text" id="textFaq">Selecciona el café que desees probar y completa el proceso de compra.
+                    Si lo
                     prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás
                     sin café.</p>
             </div>
@@ -143,11 +147,12 @@
                         <h3>¿Por qué los precios son tan bajos? </h3>
                     </div>
                     <div class="faq_arrow_sections">
-                        <img src="images/flechafaq.svg" alt="">
+                        <img id="arrowSecond" src="images/flechafaq.svg" alt="">
                     </div>
                 </div>
                 <hr>
-                <p class="faq_text">Viajamos constantemente para encontrar los mejores granos y a los agricultores más
+                <p class="faq_text" id="text_Faq_Second">Viajamos constantemente para encontrar los mejores granos y a
+                    los agricultores más
                     exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los productores de
                     café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los
                     granos de café recibe el mayor beneficio posible. </p>
@@ -159,10 +164,13 @@
                         <h3>¿Es posible enviar café a mi oficina?</h3>
                     </div>
                     <div class="faq_arrow_sections">
-                        <img src="images/flechafaq.svg" alt="">
+                        <img id="arrowThird" src="images/flechafaq.svg" alt="">
                     </div>
                 </div>
-
+                <hr>
+                <p class="faq_text" id="text_Faq_Third">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores, labore quibusdam ducimus harum nesciunt ratione. Accusantium suscipit pariatur quibusdam
+                    explicabo, et obcaecati, quos ex numquam, illum vel corporis! Earum, unde? </p>
             </div>
             <div class="link_ur_questions">
                 <a href="">Resolvemos tus dudas<img src="images/flecha_blanca.svg" alt="arrow"></a>
@@ -187,68 +195,65 @@
 
         <!--start form -->
         <section class="articleandform">
-                <div class="leftform">
+            <div class="leftform">
 
-                    <div class="leftformheader">
-                        <h1>Entra en contacto con nosotros</h1>
-                        <p>Si tienes dudas, ponte en contacto con nosotros através del formulario y te responderemos lo
-                            antes
-                            posible. </p>
-                    </div>
-                    <div class="leftformcontent">
-                        <p>También puedes ponerte en contacto con nosotros en nuestra dirección o através del teléfono
-                            de la
-                            tienda.</p>
-
-                        <p>742 Evergreen Terrace
-                            Spingfield, OR 12345</p>
-                        <p>+1(555) 123-4567</p>
-                        <p>support@example.com</p>
-                        <p>¿Buscas trabajo? Ver nuestras ofertas.</p>
-                    </div>
+                <div class="leftformheader">
+                    <h1>Entra en contacto con nosotros</h1>
+                    <p>Si tienes dudas, ponte en contacto con nosotros através del formulario y te responderemos lo
+                        antes
+                        posible. </p>
                 </div>
+                <div class="leftformcontent">
+                    <p>También puedes ponerte en contacto con nosotros en nuestra dirección o através del teléfono
+                        de la
+                        tienda.</p>
 
-                <div class="right_section_form">
-
-                    <form class="form" action="">
-                        <div class="formName">
-                            <label for="username">Nombre completo</label><br>
-                            <input type="text" id="username" name="username" required>
-                        </div>
-                        <div class="formEmail">
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="formTelf">
-                            <label for="tlf">Teléfono</label><br>
-                            <div class="tlf_options_input">
-                                <select name="pais" id="pais">
-                                    <option value="US">US</option>
-                                    <option value="ESP">ESP</option>
-                                </select>
-                                <input type="number" id="tlf" name="tlf" min="0" minlength="9" maxlength="9" list="pais"
-                                    required>
-                            </div>
-                        </div>
-                        <div class="formOpinion">
-
-                            <textarea name="opinion" id="opinion" cols="30"
-                                rows="10">       ¿En qué podemos ayudarte?</textarea>
-                        </div>
-                        <div class="checkBox">
-                            <input type="checkbox" name="aceptpriv" id="aceptpriv">
-                            <p>
-                                Acepto la <a href="">Política de privacidad</a> y los <a href="">Términos y
-                                    condiciones</a>
-                            </p>
-                        </div>
-                        <button type="submit">Enviar</button>
-                    </form>
+                    <p>742 Evergreen Terrace
+                        Spingfield, OR 12345</p>
+                    <p>+1(555) 123-4567</p>
+                    <p>support@example.com</p>
+                    <p>¿Buscas trabajo? Ver nuestras ofertas.</p>
                 </div>
+            </div>
 
-            
+            <div class="right_section_form">
+
+                <form id="form" action="">
+                    <div class="formName">
+                        <label for="username">Nombre completo</label><br>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="formEmail">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="formTelf">
+                        <label for="tlf">Teléfono</label><br>
+                        <div class="tlf_options_input">
+                            <select name="pais" id="pais">
+                                <option value="US">US</option>
+                                <option value="ESP">ESP</option>
+                            </select>
+                            <input type="number" id="tlf" name="tlf" required>
+                        </div>
+                    </div>
+                    <div class="formOpinion">
+
+                        <textarea name="opinion" id="opinion">¿En qué podemos ayudarte?</textarea>
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox" name="aceptpriv" id="aceptpriv" required>
+                        <p>
+                            Acepto la <a href="">Política de privacidad</a> y los <a href="">Términos y
+                                condiciones</a>
+                        </p>
+                    </div>
+                    <button id="submit" type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
         <!--end form -->
+
         <!--start footer -->
         <footer class="footerindex">
 
@@ -287,6 +292,8 @@
         </footer>
         <!--end footer -->
     </main>
+    
+    <script src="main.js"></script>
 </body>
 
 </html>
