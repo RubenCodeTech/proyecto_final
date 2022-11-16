@@ -15,30 +15,31 @@
     <!-- Promo full time -->
     <header class="grid_header_container">
         <nav class="navbar">
-            <section class="navlogo">
+            <div class="navlogo">
                 <h4>cafedealtura.com</h4>
                 <img src="images/Vector.svg" alt="coffee logo">
-            </section>
-            <section class="navlinks">
+            </div>
+            <div class="navlinks">
                 <a href="pages/shop.html">Tienda</a>
                 <a href="pages/suscription.html">Suscripción</a>
                 <a href="pages/for_companies.html">Para empresas</a>
                 <a href="pages/about_us.html">Sobre nosotros</a>
                 <a href="pages/contact.html">Contacto</a>
-            </section>
-            <section class="navtelf">
+            </div>
+            <div class="navtelf">
                 <img src="images/Icon (2).svg" alt="telf">
                 <a href="tel:+34919490518">+34 919 49 05 18</a>
-                <input class="button" type="button" value="Iniciar sesión" />
-            </section>
-            <section class="navbaglogo">
+                <input id="buttonNavLogin" class="button" type="button" value="Iniciar sesión" />
+            </div>
+            <div class="navbaglogo">
                 <div><a href="pages/shoppingcart.html"><img src="images/Group.svg" alt=""></a></div>
-            </section>
+            </div>
         </nav>
+        <!-- FIN NAVBAR -->
     </header>
     <main>
         <section class="thebestcoffee">
-            <article class="article">
+            <div class="containerArticleFirstSection">
 
                 <p>De la punta a tu taza</p>
                 <h1>El mejor café del mundo, ahora en tu casa.</h1>
@@ -48,10 +49,10 @@
                     <div><input type="button" class="descubrirbutton" value="Descubrir origenes"> </div>
                     <div><input type="button" class="comprarbutton" value="Comprar café"></div>
                 </section>
-            </article>
-            <picture class="img">
-                <img src="images/Hero image.png" class="heroimg" alt="tree">
-            </picture>
+            </div>
+            <div class="containerImgArticleFirstSection">
+                <img src="images/Hero image.png" class="imgArticleFirstSection" alt="tree">
+            </div>
         </section>
 
 
@@ -87,7 +88,7 @@
         <section>
             <!--start saquitos -->
             <h2>Novedades</h2>
-            <div id="cestaCompra">hgtfhdfdh</div>
+            <div id="cestaCompra"></div>
             <div class="coffeebags">
                 <div></div>
                 <div class="coffeegreen"> 
@@ -218,37 +219,46 @@
 
             <div class="right_section_form">
 
-                <form id="form" action="">
+                <form id="form" action="" oninput="validateForm()">
                     <div class="formName">
                         <label for="username">Nombre completo</label><br>
                         <input type="text" id="username" name="username" required>
+                        <p class="formTextError">El nombre tiene que ser de 4 a 24 caracteres.</p>
                     </div>
                     <div class="formEmail">
-                        <label for="email">Email</label><br>
+                        <label for="email">Email es incorrecto</label><br>
                         <input type="email" id="email" name="email" required>
+                        <p class="formTextError">El email debe contener "@" y el dominio de tu email.</p>
                     </div>
                     <div class="formTelf">
                         <label for="tlf">Teléfono</label><br>
                         <div class="tlf_options_input">
-                            <select name="pais" id="pais">
-                                <option value="US">US</option>
-                                <option value="ESP">ESP</option>
-                            </select>
-                            <input type="number" id="tlf" name="tlf" required>
+                            <div>
+
+                                <select name="pais" id="pais">
+                                    
+                                    <option value="US">US</option>
+                                    <option value="ESP">ESP</option>
+                                </select>
+                                <input type="text" id="tlf" name="tlf">
+                            </div>
+                            <div class="formerrortelf"><p class="formTextError"> El numero debe contener 9 dígitos</p></div>
                         </div>
                     </div>
                     <div class="formOpinion">
-
-                        <textarea name="opinion" id="opinion">¿En qué podemos ayudarte?</textarea>
+                        <input type="text" name="opinion" id="opinion" placeholder="¿En qué podemos ayudarte?">
+                        <!-- <textarea name="opinion" id="opinion" placeholder="¿En qué podemos ayudarte?"></textarea> -->
+                        <p class="formTextError">Al menos un caracter. Máximo 140 carcteres.</p>
                     </div>
                     <div class="checkBox">
-                        <input type="checkbox" name="aceptpriv" id="aceptpriv" required>
+                        <input type="checkbox" name="aceptpriv" id="aceptpriv">
                         <p>
                             Acepto la <a href="">Política de privacidad</a> y los <a href="">Términos y
                                 condiciones</a>
                         </p>
                     </div>
                     <button id="submit" type="submit">Enviar</button>
+        
                 </form>
             </div>
         </section>
